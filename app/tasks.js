@@ -38,5 +38,20 @@ const tasks = [
         "id": 8,
         "label": "Kwaliteit invullen",
         "completed": false
+    },
+    {
+        "id": 9,
+        "label": "ZZA werkpost controleren",
+        "completed": false
+    },
+    {
+        "id": 10,
+        "label": "ZZA uitreiken in Distripost",
+        "completed": false
+    },
+    {
+        "id": 11,
+        "label": "Bijdragen",
+        "completed": false
     }
 ]
