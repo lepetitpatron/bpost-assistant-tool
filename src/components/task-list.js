@@ -1,4 +1,4 @@
-const dailyChecklist = document.getElementById("daily-checklist");
+const DAILY_CHECK_LIST = document.getElementById("daily-checklist");
 
 export function renderTasks(tasks) {
     tasks.forEach(task => {
@@ -8,23 +8,23 @@ export function renderTasks(tasks) {
 }
 
 function createTask(task) {
-    const div = document.createElement("div");
-    div.className = "form-check";
+    const DIV = document.createElement("div");
+    DIV.className = "form-check";
 
-    const input = document.createElement("input");
-    input.className = "form-check-input";
-    input.type = "checkbox";
-    input.id = `task-${task.id}`;
+    const INPUT = document.createElement("input");
+    INPUT.className = "form-check-input";
+    INPUT.type = "checkbox";
+    INPUT.id = `task-${task.id}`;
 
-    const label = document.createElement("label");
-    label.className = task.label;
-    label.htmlFor = input.id;
-    label.textContent = task.label;
+    const LABEL = document.createElement("label");
+    LABEL.className = task.label;
+    LABEL.htmlFor = INPUT.id;
+    LABEL.textContent = task.label;
 
-     div.append(input, label);
-     return div;
+    DIV.append(INPUT, LABEL);
+     return DIV;
 }
 
 function renderTask(task) {
-    dailyChecklist.appendChild(task);
+    DAILY_CHECK_LIST.appendChild(task);
 }
